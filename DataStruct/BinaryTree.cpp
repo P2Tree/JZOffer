@@ -139,7 +139,7 @@ void BinaryTree::print() const {
   }
 }
 
-int main() {
+static int test() {
   BinaryTree *bt = new BinaryTree(1);
   BinaryTreeNode node2 = BinaryTreeNode(2);
   BinaryTreeNode node3 = BinaryTreeNode(3);

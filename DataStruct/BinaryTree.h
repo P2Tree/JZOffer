@@ -1,3 +1,5 @@
+#pragma once
+
 #include <iostream>
 #include <vector>
 #include <stack>
@@ -26,6 +28,7 @@ public:
   BinaryTree(int v) : root(new BinaryTreeNode(v)){}
   BinaryTree(int v, BinaryTreeNode *l, BinaryTreeNode *r)
     : root(new BinaryTreeNode(v, l, r)) {}
+  BinaryTree(BinaryTreeNode *node) : root(node) {}
 
   void preOrderTraverse();
   void inOrderTraverse();
